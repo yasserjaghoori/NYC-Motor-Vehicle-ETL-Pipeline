@@ -11,14 +11,15 @@ Command: python3 nyc_etl_spark.py
 - Step 3: Set Up RDS Database and Table
 nyc_rds_setup.py – Connects to your MySQL RDS instance, creates database and collisions table.
 Command: python3 nyc_rds_setup.py
-Sample config.yaml Format
 
-aws_access_key_id: YOUR_ACCESS_KEY
-aws_secret_access_key: YOUR_SECRET_KEY
-aws_region: us-east-1
-bucket_name: nyc-motor-vehicle-collission
+# Sample config.yaml Format
 
-Example Output (Parquet Schema)
+- aws_access_key_id: YOUR_ACCESS_KEY
+- aws_secret_access_key: YOUR_SECRET_KEY
+- aws_region: us-east-1
+- bucket_name: nyc-motor-vehicle-collission
+
+# Example Output (Parquet Schema)
 
 | collision_id | crash_date | crash_time | borough | zip_code | latitude | longitude |
 |--------------|-------------|------------|---------|----------|----------|-----------|
